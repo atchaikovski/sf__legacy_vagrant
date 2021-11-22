@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: foundryai/postgres8
+    environment:
+      POSTGRES_USER: alex
+      POSTGRES_PASSWORD: alex
+      POSTGRES_DATABASE: sf65
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data:/usr/local/psql/data
